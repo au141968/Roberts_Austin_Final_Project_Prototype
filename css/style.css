@@ -16,18 +16,17 @@ body {
   text-align: center;
   padding: 40px;
   background: rgb(2, 2, 59);
-  position: absolute;
   top: 50%;
     left: 50%;
+    max-width: 500px;
     width: 500px;
     height: 300px;
-    transform: translate(-50%, -50%);
     border-radius: 20px;
-    
     display: flex;
   flex-direction: column;
   justify-content: center;  
   align-items: center; 
+  margin: 40px auto;
   gap: 20px;
 }
 
@@ -78,8 +77,21 @@ h3 {
     gap: 20px;
 }
 
-.card-1 {
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 400px;
+    }
+
+
+.card-1, .card-2, .card-3, .card-4 {
     background-color: midnightblue;
+    padding: 20px;
     flex: 1 1 300px;
     top: 15%;
     left: 10%;
@@ -87,44 +99,8 @@ h3 {
     height: 275px;
     border-radius: 20px;
     border-color: rgba(18, 36, 197, 0.781);
-    position: absolute;
     box-sizing: border-box;
 }
-
-.card-2 {
-    background-color: midnightblue;
-    flex: 1 1 300px;
-    top: 15%;
-    left: 70%;
-    width: 350px;
-    height: 275px;
-    border-radius: 20px;
-    border-color: rgba(18, 36, 197, 0.781);
-    position: absolute;
-}
-
-.card-3 {
-    background-color: midnightblue;
-    flex: 1 1 300px;
-    top: 55%;
-    left: 10%;
-    width: 350px;
-    height: 275px;
-    border-radius: 20px;
-    border-color: rgba(18, 36, 197, 0.781);
-    position: absolute;
-}
-
-.card-4 {
-    background-color: midnightblue;
-    flex: 1 1 300px;
-    top: 55%;
-    left: 70%;
-    width: 350px;
-    height: 275px;
-    border-radius: 20px;
-    border-color: rgba(18, 36, 197, 0.781);
-    position: absolute;
 }
 
 .image-btn {
