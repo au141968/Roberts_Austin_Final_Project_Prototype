@@ -21,3 +21,12 @@ window.addEventListener('click', (event) => {
         }
     });
 });
+
+let playButton = document.getElementById("playButton");
+if (playButton) {
+    playButton.addEventListener("click", audioPlayer);
+}
+function audioPlayer() {
+    let audio = new Audio("sound/playstarz_music-space-ambient-435262.mp3");
+    audio.play() 
+}
